@@ -1,15 +1,32 @@
 import React, { Component} from "react";
-import { Button } from "./components";
-import { ReactComponent as PlusIcon } from "./icons/plus-icon.svg";
-import { ReactComponent as MinusIcon } from "./icons/minus-icon.svg";
+import { Counter, RepoInfo } from "./components";
 
 class App extends Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      count: 0
+    }
+}
+  onCounterClick = (isIncrement = false) => {
+    // If increment button was clicked, increase counter. Otherwise decrease counter
+    if (isIncrement){
+      this.setState({
+          count: this.state.count + 1
+      });
+  }
+  else {
+      this.setState({
+          count: this.state.count - 1
+      });
+  }
+  }
   render(){
     return(
       <div className="App">
-        <h1> Hello, World!!! </h1>
-        <Button  buttonText="- Decrement"><MinusIcon /> Decrement</Button>
-        <Button primary buttonText="+ Increment"><PlusIcon /> Increment</Button>
+        <h1>My favorite Github repos</h1>
+        <Counter count={this.state.count} onCounterClick={this.onCounterClick} /> 
+        <RepoInfo count={this.state.count} />
       </div>
     );
   }

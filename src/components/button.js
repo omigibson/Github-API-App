@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function Button (props) {
    return (
-      <CounterButton type="button" primary={props.primary} aria-label={props.ariaLabel} onClick={props.onClick}>{props.children}</CounterButton>
+      <CounterButton type="button" primary={props.primary} onClick={props.onClick}>{props.children}</CounterButton>
    )
 }
 
