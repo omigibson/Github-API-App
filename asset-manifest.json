@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/github-api-app/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/github-api-app/static/js/main.110d59d5.chunk.js",
-    "main.js.map": "/github-api-app/static/js/main.110d59d5.chunk.js.map",
-    "runtime-main.js": "/github-api-app/static/js/runtime-main.3bb190ba.js",
-    "runtime-main.js.map": "/github-api-app/static/js/runtime-main.3bb190ba.js.map",
-    "static/js/2.54904844.chunk.js": "/github-api-app/static/js/2.54904844.chunk.js",
-    "static/js/2.54904844.chunk.js.map": "/github-api-app/static/js/2.54904844.chunk.js.map",
-    "index.html": "/github-api-app/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/github-api-app/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.54904844.chunk.js.LICENSE.txt": "/github-api-app/static/js/2.54904844.chunk.js.LICENSE.txt",
-    "static/media/minus-icon.a7279320.svg": "/github-api-app/static/media/minus-icon.a7279320.svg",
-    "static/media/plus-icon.b608f8e8.svg": "/github-api-app/static/media/plus-icon.b608f8e8.svg"
+    "main.css": "/Github-API-App/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Github-API-App/static/js/main.d3c33dea.chunk.js",
+    "main.js.map": "/Github-API-App/static/js/main.d3c33dea.chunk.js.map",
+    "runtime-main.js": "/Github-API-App/static/js/runtime-main.f5b2096a.js",
+    "runtime-main.js.map": "/Github-API-App/static/js/runtime-main.f5b2096a.js.map",
+    "static/js/2.07feafd5.chunk.js": "/Github-API-App/static/js/2.07feafd5.chunk.js",
+    "static/js/2.07feafd5.chunk.js.map": "/Github-API-App/static/js/2.07feafd5.chunk.js.map",
+    "index.html": "/Github-API-App/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/Github-API-App/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.07feafd5.chunk.js.LICENSE.txt": "/Github-API-App/static/js/2.07feafd5.chunk.js.LICENSE.txt",
+    "static/media/minus-icon.a7279320.svg": "/Github-API-App/static/media/minus-icon.a7279320.svg",
+    "static/media/plus-icon.b608f8e8.svg": "/Github-API-App/static/media/plus-icon.b608f8e8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3bb190ba.js",
-    "static/js/2.54904844.chunk.js",
+    "static/js/runtime-main.f5b2096a.js",
+    "static/js/2.07feafd5.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.110d59d5.chunk.js"
+    "static/js/main.d3c33dea.chunk.js"
   ]
 }
