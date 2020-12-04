@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// OUTPUT
 function Button (props) {
    return (
       <CounterButton type="button" primary={props.primary} onClick={props.onClick}>{props.children}</CounterButton>
    )
 }
 
+// STYLES
 const CounterButton = styled.button`
    width: 150px;
    background-color: ${props => (props.primary ? 'hotpink' : 'white')};

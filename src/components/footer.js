@@ -1,7 +1,8 @@
 import React from "react";
 import styled from 'styled-components';
 
-function Footer(props) {
+// OUTPUT
+function Footer() {
     return(
         <Container>
             <Text>Site made by Omi Gibba in December 2020</Text>
@@ -9,6 +10,7 @@ function Footer(props) {
     );
 }
 
+// STYLES
 const Container = styled.div`
     background-color: #24292e;
     padding: 1rem;

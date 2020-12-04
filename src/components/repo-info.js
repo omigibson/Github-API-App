@@ -1,6 +1,7 @@
 import React, { Component} from "react";
 import styled from 'styled-components';
 
+// OUTPUT. Conditional rendering on line 9 and 20.
 function RepoInfo (props) {
     const repoName = props.repo.full_name ? props.repo.full_name : props.repo.message;
     return (
@@ -26,6 +27,7 @@ function RepoInfo (props) {
     )
 }
 
+// STYLES
 const Info = styled.div`
     max-width: 500px;
     background-color: white;

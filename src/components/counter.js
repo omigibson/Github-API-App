@@ -4,6 +4,7 @@ import Button from './button';
 import { ReactComponent as PlusIcon } from "../icons/plus-icon.svg";
 import { ReactComponent as MinusIcon } from "../icons/minus-icon.svg";
 
+// OUTPUT
 function Counter(props) {
     return(
         <CounterContainer>
@@ -14,6 +15,7 @@ function Counter(props) {
     );
 }
 
+// STYLES
 const CounterContainer = styled.div`
     padding: 1rem;
 `;

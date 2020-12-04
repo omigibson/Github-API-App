@@ -21,12 +21,15 @@ class App extends Component{
     }
 }
 
+// METHODS
+
+// Show info on the first repo on page load
 componentDidMount(){
   this.getRepoInfo()
 }
 
+// Change count in state on button click. Then fetch info on selected repo
   onCounterClick = (isIncrement = false) => {
-    // If increment button was clicked, increase counter. Otherwise decrease counter
     if (isIncrement){
       console.log('increase')
       this.setState({
@@ -41,8 +44,9 @@ componentDidMount(){
     }
   }
 
+
+  // Call Github API and fetch repo data
   getRepoInfo = () => {
-    console.log('Get repos')
     fetch('https://api.github.com/repos/' + this.state.repos[this.state.count])
       .then(res => res.json())
       .then((data) => {
@@ -57,6 +61,7 @@ componentDidMount(){
       })
   }
 
+  // OUTPUT
   render(){
     return(
       <>
@@ -76,6 +81,8 @@ componentDidMount(){
   }
 }
 
+
+// STYLES
 const OuterAppWrapper = styled.div`
   background-color: #f6f8fa;
   color: #24292e;
