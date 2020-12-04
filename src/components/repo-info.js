@@ -1,32 +1,51 @@
 import React, { Component} from "react";
 import styled from 'styled-components';
 
-const repos = [
-    'eslint/eslint',
-    'oakwood/front-end-questions',
-    'babel/babel',
-    'webpack/webpack',
-    'storybooks/storybook',
-    'facebook/react',
-    'reactjs/redux',
-    'expressjs/express'
-  ];
-
-class RepoInfo extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-          count: 0
-        }
-    }
-    render(){
-        return (
-                <div>
-                    <h2>Info</h2>
-                    <p>{this.props.count}</p>
-                </div>
-        )
-    }
+function RepoInfo (props) {
+    const repoName = props.repo.full_name ? props.repo.full_name : props.repo.message;
+    return (
+        <Info>
+            { props.repo.full_name ? 
+            <>
+                <h2>{props.repo.full_name}</h2>
+                <Description>{props.repo.description}</Description>
+                <p>Stars: {props.repo.stargazers_count}</p>
+            </>
+            : <>
+                <h2>{props.repo.message}</h2>
+                <Link href={props.repo.documentation_url} target="_blank" rel="noopener noreferrer">{props.repo.documentation_url}</Link>
+            </>
+            }
+            { props.repo.error &&
+                <>
+                    <h2>Something went wrong</h2>
+                    <Description>{props.repo.error}</Description>
+                </>
+            }
+        </Info>
+    )
 }
+
+const Info = styled.div`
+    max-width: 500px;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    margin: 1rem auto 0;
+`;
+
+const Link = styled.a`
+    color: #0366d6;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+`;
+
+const Description = styled.p`
+    color: #586069;
+`;
 
 export default RepoInfo;
