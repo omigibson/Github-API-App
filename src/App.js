@@ -31,13 +31,11 @@ componentDidMount(){
 // Change count in state on button click. Then fetch info on selected repo
   onCounterClick = (isIncrement = false) => {
     if (isIncrement){
-      console.log('increase')
       this.setState({
           count: this.state.count + 1
       }, this.getRepoInfo);
     }
     else {
-      console.log('decrease')
         this.setState({
             count: this.state.count - 1
         }, this.getRepoInfo);
